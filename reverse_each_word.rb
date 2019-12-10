@@ -1,8 +1,6 @@
 def reverse_each_word (sent)
   array = sent.split(" ")
-  brray = []
-  array.each do |word|
-    brray << word.reverse
+  array.map do |word|
+    word.reverse
   end
-  brray.join(" ")
 end
